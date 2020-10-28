@@ -2,7 +2,14 @@
 
 // Complete this algo
 const binarySearch = (array, target) => {
-	
+	let foundStatus = false;
+
+	for (let i = 0; i < array.length; i++) {
+		if (array[i] === target) {
+			foundStatus = true;
+		}
+	}
+	return foundStatus;
 };
 
 /*
